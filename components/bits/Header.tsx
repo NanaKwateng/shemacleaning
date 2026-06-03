@@ -25,12 +25,12 @@ export default function Header() {
                             <Link
                                 key={item.name}
                                 href={item.path}
-                                className={`transition-colors flex items-center gap-2 relative group py-2 ${isActive ? "text-white font-bold" : "hover:text-white"
+                                className={`transition-colors flex items-center gap-2 text-white font-semibold relative group py-2 ${isActive ? "text-white font-bold" : "hover:text-white"
                                     }`}
                             >
                                 {item.name}
-                                <FaChevronDown className="w-2.5 h-2.5 text-neutral-600 group-hover:text-white transition-colors" />
-                                <span className={`absolute bottom-0 left-0 h-[1px] bg-white transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                                <ArrowUpRight className="w-2.5 h-2.5 text-white font-semibold group-hover:text-white transition-colors" />
+                                <span className={`absolute bottom-0 left-0 h-px bg-white transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"
                                     }`} />
                             </Link>
                         );
@@ -50,7 +50,7 @@ export default function Header() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     >
-                        Shema Cleaning Services
+                        Shema Cleaning & Concierge Services
                     </motion.a>
                 </div>
 
@@ -68,7 +68,7 @@ export default function Header() {
                             <Link
                                 key={item.name}
                                 href={item.path}
-                                className={`transition-colors flex items-center gap-2 relative group py-2 ${isActive ? "text-white font-bold" : "hover:text-white"
+                                className={`transition-colors flex items-center gap-2 relative group py-2 text-white ${isActive ? "text-white font-bold" : "hover:text-white"
                                     }`}
                             >
                                 {item.name}
