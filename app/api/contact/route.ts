@@ -62,10 +62,11 @@ export async function POST(req: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [OWNER_EMAIL],
-      reply_to: email,
+      replyTo: email, // Changed from reply_to to replyTo
       subject: `New Enquiry from ${name} — Shema Cleaning Services`,
       html: buildEmailHtml({ name, email, message }),
     });
+
 
     // 5. Handle Resend errors
     if (error) {
