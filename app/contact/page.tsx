@@ -6,7 +6,7 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa6";
 import Link from "next/link";
 
 const businessPhoneNumber = "07346459922";
-const whatsAppNumber = "7852977479"; // WhatsApp requires country code without leading zero
+const whatsAppNumber = "7346459922"; // WhatsApp requires country code without leading zero +447346459922
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -59,7 +59,7 @@ export default function ContactPage() {
     >
       {/* ================= BACKGROUND ABSTRACT ELEMENTS ================= */}
       {/* Top-Right Cloth-like Wave */}
-      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] max-w-[800px] pointer-events-none opacity-40 mix-blend-screen select-none z-0">
+      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] max-w-200 pointer-events-none opacity-40 mix-blend-screen select-none z-0">
         <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover">
           <defs>
             <linearGradient id="cloth-grad-tr" x1="0%" y1="0%" x2="100%" y2="100%">

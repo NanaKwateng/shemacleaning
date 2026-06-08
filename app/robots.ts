@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/", "/*.js", "/*.css", "/*.jpg", "/*.jpeg", "/*.png", "/*.webp", "/*.svg", "/*.mp4"],
       },
     ],
-    sitemap: "https://shemacleaning.com/sitemap.xml",
+    sitemap: "https://shemacleaning.uk/sitemap.xml",
   };
 }

@@ -21,13 +21,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // ✅ Fixed typo: "Servies" → "Services"; added high-value keywords
   title: {
-    default: "Shema Cleaning Services | Professional Cleaning in Manchester, UK",
-    template: "%s | Shema Cleaning Services",
+    default: "Shema Cleaning & Concierge Services",
+    template: "%s | Shema Cleaning & Concierge Services",
   },
   description:
     "Shema Cleaning Services delivers professional commercial cleaning, corporate office sanitization, post-construction deep cleans, and luxury residential maintenance across Manchester, UK. Eco-friendly, fully insured, background-checked teams.",
   keywords: [
     "cleaning services Manchester",
+    "cleaning services",
+    "cleaning Manchester",
     "commercial cleaning Manchester",
     "office cleaning Manchester",
     "professional cleaning services UK",
@@ -38,12 +40,14 @@ export const metadata: Metadata = {
     "corporate cleaning services",
     "domestic cleaning Manchester",
     "Shema Cleaning",
+    "Shema Concierge Services",
+    "Concierge Services",
     "cleaning agency Manchester",
   ],
-  authors: [{ name: "Shema Cleaning Services", url: "https://shemacleaning.com" }],
+  authors: [{ name: "Shema Cleaning Services", url: "https://shemacleaning.uk" }],
   creator: "Shema Cleaning Services",
   publisher: "Shema Cleaning Services",
-  metadataBase: new URL("https://shemacleaning.com"),
+  metadataBase: new URL("https://shemacleaning.uk"),
   alternates: {
     canonical: "/",
   },
@@ -52,26 +56,26 @@ export const metadata: Metadata = {
     title: "Shema Cleaning Services | Professional Cleaning Manchester",
     description:
       "Premium commercial, office, post-construction, and luxury residential cleaning services across Manchester, UK. Eco-friendly. Fully insured. Available 7 days.",
-    url: "https://shemacleaning.com",
-    siteName: "Shema Cleaning Services",
+    url: "https://shemacleaning.uk",
+    siteName: "Shema Cleaning & Concierge Services",
     locale: "en_GB",
     type: "website",
     images: [
       {
-        url: "https://shemacleaning.com/assets/og-hero.jpg",
+        url: "https://shemacleaning.uk/assets/og-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Shema Cleaning Services — Professional Cleaning Manchester",
+        alt: "Shema Cleaning & Concierge Services",
       },
     ],
   },
   // Twitter / X Card
   twitter: {
     card: "summary_large_image",
-    title: "Shema Cleaning Services | Manchester Cleaning Agency",
+    title: "Shema Cleaning & Concierge Services",
     description:
       "Professional commercial & residential cleaning services across Manchester. Eco-friendly products, background-checked staff, 100% satisfaction guaranteed.",
-    images: ["https://shemacleaning.com/assets/og-hero.jpg"],
+    images: ["https://shemacleaning.uk/assets/og-hero.jpg"],
   },
   // Geo tags for local SEO
   other: {
@@ -97,15 +101,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   // ✅ Fixed schema: unified URL to shemacleaning.com, corrected Manchester geo coords,
   //    added priceRange, added ServiceType array, added areaServed
   const schemaJson = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.uk",
     "@type": "LocalBusiness",
-    "@id": "https://shemacleaning.com/#business",
-    "name": "Shema Cleaning Services",
-    "image": "https://shemacleaning.com/assets/og-hero.jpg",
-    "logo": "https://shemacleaning.com/assets/logo.png",
-    "url": "https://shemacleaning.com",
+    "@id": "https://shemacleaning.uk/#business",
+    "name": "Shema Cleaning & Concierge Services",
+    "image": "https://shemacleaning.uk/assets/og-hero.jpg",
+    "logo": "https://shemacleaning.uk/assets/logo.png",
+    "url": "https://shemacleaning.uk",
     "telephone": "+447346459922",
-    "email": "info@shemacleaning.com",
+    "email": "info@shemacleaning.uk",
     "priceRange": "££",
     "description":
       "Professional commercial, office, post-construction, and luxury residential cleaning services in Manchester, UK. Eco-friendly products, background-checked staff.",
@@ -179,12 +183,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   // FAQ Schema — matches the FAQ component content, boosts rich results
   const faqSchemaJson = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.uk",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas and locations does Shema Cleaning Agency service?",
+        "name": "What areas and locations does Shema Cleaning & Concierge service?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "We provide comprehensive commercial, office, and luxury residential cleaning services across the entire metropolitan area and surrounding corporate business corridors. For major commercial or post-construction contracts, we are equipped to deploy teams to regional locations outside our standard boundary.",

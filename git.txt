@@ -1,3 +1,7 @@
-git remote add origin https://github.com/NanaKwateng/shema.git
+git remote add origin https://github.com/NanaKwateng/shemacleaning.git
+
 git branch -M main
 git push -u origin main
+
+
+

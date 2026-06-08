@@ -6,7 +6,7 @@ export default function TermsOfService() {
             <div className="max-w-3xl mx-auto space-y-12">
                 {/* Header */}
                 <div className="space-y-4 border-b border-white/10 pb-8">
-                    <span className="font-mono text-xs text-neutral-500 uppercase tracking-widest block">[ SERVICE FRAMEWORK ]</span>
+                    <span className="font-mono text-xs text-neutral-500 uppercase tracking-widest block">[ SERVICES ]</span>
                     <h1 className="text-3xl md:text-5xl font-mono uppercase tracking-tight text-white">Terms of Service</h1>
                     <p className="text-xs font-mono text-neutral-500 uppercase">Effective Date: May 2026</p>
                 </div>
@@ -16,7 +16,7 @@ export default function TermsOfService() {
                     <section className="space-y-3">
                         <h3 className="font-mono text-white uppercase text-base tracking-wide">1. Service Scope Execution</h3>
                         <p>
-                            Shema Cleaning Agency agrees to provide sanitation, deep washing, and maintenance operations as outlined during client booking confirmation. Modifications to the structural area layout metrics must be reported 48 hours prior to arrival.
+                            Shema Cleaning & Concierge Services agrees to provide sanitation, deep washing, and maintenance operations as outlined during client booking confirmation. Modifications to the structural area layout metrics must be reported 48 hours prior to arrival.
                         </p>
                     </section>
 

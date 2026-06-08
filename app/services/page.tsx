@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     canonical: "/services",
   },
   openGraph: {
-    title: "Cleaning Services | Shema Cleaning Manchester",
+    title: "Cleaning Services | Shema Cleaning & Concierge Services",
     description:
       "Professional estate preservation, corporate curation, and post-construction handover cleaning in Manchester.",
-    url: "https://shemacleaning.com/services",
+    url: "https://shemacleaning.uk/services",
   },
 };
 

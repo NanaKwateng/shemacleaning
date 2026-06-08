@@ -15,7 +15,28 @@ import Footer from "@/components/layout/Footer";
 import AboutGrid from "@/components/layout/AboutGrid";
 
 export const metadata: Metadata = {
-  title: "Professional Cleaning Services Manchester | Shema Cleaning Agency",
+  title: "Professional Cleaning Services| Shema Cleaning & Concierge Services",
+  keywords: [
+    "cleaning services",
+    "cleaning services Manchester",
+    "commercial cleaning Manchester",
+    "office cleaning Manchester",
+    "professional cleaning services UK",
+    "post-construction cleaning",
+    "luxury residential cleaning",
+    "deep cleaning Manchester",
+    "eco-friendly cleaning services",
+    "corporate cleaning services",
+    "domestic cleaning Manchester",
+    "Shema Cleaning",
+    "Shema Concierge Services",
+    "Concierge Services",
+    "cleaning agency Manchester",
+  ],
+  authors: [{ name: "Shema Cleaning Services", url: "https://shemacleaning.uk" }],
+  creator: "Shema Cleaning Services",
+  publisher: "Shema Cleaning Services",
+  metadataBase: new URL("https://shemacleaning.uk"),
   description:
     "Shema Cleaning Services — Manchester's premier commercial cleaning, office sanitization, post-construction deep cleans, and luxury residential maintenance. Eco-friendly, fully insured, available 7 days a week.",
   alternates: {
