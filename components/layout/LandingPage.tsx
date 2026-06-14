@@ -91,17 +91,14 @@ export default function LandingPage() {
 
             {/* 1. Immersive BACKGROUND MEDIA LOOP with Cinematic Overlays */}
             <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-                {/* Use Provided Travel Image as Poster fallback for video best practice */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    poster="https://images.unsplash.com/photo-1603712449511-2bef0883395b?auto=format&fit=crop&w=1920&q=40"
-                    className="w-full h-full object-cover opacity-40 scale-100 transition-transform duration-[4000ms] ease-out"
-                >
-                    <source src="/videos/clean2.mp4" type="video/mp4" />
-                </video>
+                <Image
+                    src="/images/hero.png"
+                    alt="Background Hero"
+                    fill
+                    priority
+                    quality={85}
+                    className="object-cover opacity-40 scale-100 transition-transform duration-[4000ms] ease-out"
+                />
             </div>
 
             {/* 2. Complex ASYMMETRICAL Bento Navigation Grid (Precision Replicated from 'image_9.png') */}
