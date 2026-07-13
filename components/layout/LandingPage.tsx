@@ -108,13 +108,13 @@ export default function LandingPage() {
             {/* Mobile Context Drawer (retained from original code logic) */}
 
             {/* 3. Main Bento grid Hero Content Block */}
-            <main className="relative z-20 flex-grow flex flex-col justify-center max-w-[1400px] mx-auto w-full pt-20 pb-20 px-10">
+            <main className="relative z-20 flex-grow flex flex-col justify-center max-w-[1400px] mx-auto w-full pt-10 pb-10 px-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-12 items-start w-full">
 
                     {/* Left Column Complex: Huge Serif Heading, Unique Discover Button UI, and Descriptive Para */}
                     <div className="md:col-span-9 space-y-12">
                         {/* The Huge Editorial Serif Header with SplitText Animation */}
-                        <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-[110px] font-semibold tracking-tight text-white uppercase leading-[0.9] flex flex-col select-none !items-start !justify-start !text-left max-w-xl pt-8">
+                        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[110px] font-semibold tracking-tight text-white uppercase leading-[0.9] flex flex-col select-none !items-start !justify-start !text-left max-w-xl pt-8">
                             <SplitText text="Clean Spaces, Happy Environments" className="text-white !text-left" delay={0.1} />
                         </h1>
 
