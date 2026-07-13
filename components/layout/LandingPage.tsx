@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { ArrowUpRight, Menu, X, ShieldCheck, Sparkles, HelpCircle, ChevronDown, Download, ShoppingCart, User } from "lucide-react";
-import Image from "next/image";
 import { FaArrowUpRightFromSquare, FaBuilding, FaBuildingShield, FaHouseChimney } from "react-icons/fa6";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -89,35 +88,35 @@ export default function LandingPage() {
         /* Towering viewport framework matching high-end editorial spatial layouts */
         <div className="relative min-h-[150vh] w-full bg-transparent text-white overflow-hidden flex flex-col justify-between select-none font-sans border-x border-white/5">
 
-            {/* 1. Immersive BACKGROUND MEDIA LOOP with Cinematic Overlays */}
-            <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-                <Image
-                    src="/images/hero.png"
-                    alt="Background Hero"
-                    fill
-                    priority
-                    quality={85}
-                    className="object-cover opacity-40 scale-100 transition-transform duration-[4000ms] ease-out"
-                />
+            {/* 1. Immersive BACKGROUND VIDEO LOOP with Cinematic Overlays */}
+            <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover opacity-40 object-center"
+                    poster="/images/hero.png" // Fallback high-res frame while video loads
+                >
+                    {/* Make sure your source points to your new high-res landscape video */}
+                    <source src="/videos/dust.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
-            {/* 2. Complex ASYMMETRICAL Bento Navigation Grid (Precision Replicated from 'image_9.png') */}
-
-
+            {/* 2. Complex ASYMMETRICAL Bento Navigation Grid */}
             {/* Mobile Context Drawer (retained from original code logic) */}
 
-            {/* 3. Main Bento grid Hero Content Block (Positioned as only source of truth) */}
+            {/* 3. Main Bento grid Hero Content Block */}
             <main className="relative z-20 flex-grow flex flex-col justify-center max-w-[1400px] mx-auto w-full pt-20 pb-20 px-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-12 items-start w-full">
 
                     {/* Left Column Complex: Huge Serif Heading, Unique Discover Button UI, and Descriptive Para */}
                     <div className="md:col-span-9 space-y-12">
-
                         {/* The Huge Editorial Serif Header with SplitText Animation */}
                         <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-[110px] font-semibold tracking-tight text-white uppercase leading-[0.9] flex flex-col select-none !items-start !justify-start !text-left max-w-xl pt-8">
                             <SplitText text="Clean Spaces, Happy Environments" className="text-white !text-left" delay={0.1} />
                         </h1>
-
 
                         {/* descriptive paragraph content from cleaning brand voice */}
                         <motion.p
@@ -128,35 +127,30 @@ export default function LandingPage() {
                         >
                             At Shema Cleaning Agency, we deliver hyper-detailed maintenance protocols, pristine commercial operations, and premium eco-friendly treatments tailored for high-end corporate offices, industrial hubs, and luxury residences.
                         </motion.p>
-
                     </div>
 
-                    {/* Right Asymmetric Meta Column (direct layout alignment for badges and widgets) */}
+                    {/* Right Asymmetric Meta Column */}
                     <div className="md:col-span-3 space-y-6 md:pb-6 relative h-full flex flex-col justify-end">
-
                         <Link href="/contact" passHref>
                             <Button
                                 variant="ghost"
                                 className="h-auto px-0 bg-black/30 px-4 py-2 rounded-xl text-white uppercase group pt-2 flex items-center gap-4 transition-all duration-300"
                             >
-                                <span className="">
-                                    Book Shema Services
-                                </span>
-                                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-white  tetx-black group-hover:bg-white/20 text-neutral-400 group-hover:text-white transition-all duration-300">
+                                <span>Book Shema Services</span>
+                                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-white group-hover:bg-white/20 text-neutral-400 group-hover:text-white transition-all duration-300">
                                     <FaArrowUpRightFromSquare className="w-2.5 h-2.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
                                 </div>
                             </Button>
                         </Link>
                     </div>
                 </div>
-
             </main>
 
-            {/* 4. COMPACT BENTO TEXT GRID Block (Replaces old hero cards, following bento design rules) */}
+            {/* 4. COMPACT BENTO TEXT GRID Block */}
             <article className="relative z-20 w-full bg-transparent mx-auto py-16 px-4 md:px-8 border-b border-white/[0.08]">
                 <div className="max-w-[1200px] mx-auto flex flex-col items-center justify-center">
 
-                    {/* Top Span: Large Commercial & Corporate Hub */}
+                    {/* Top Span */}
                     <motion.div
                         className="w-full pb-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-center border-b border-white/[0.08]"
                         initial={{ opacity: 0, y: 20 }}
@@ -169,10 +163,9 @@ export default function LandingPage() {
                         </div>
                     </motion.div>
 
-                    {/* Bottom Row: Split into two matching columns with a middle vertical rule */}
+                    {/* Bottom Row */}
                     <div className="w-full grid grid-cols-1 md:grid-cols-2">
-
-                        {/* Bottom Left Cell: Executive Office Care */}
+                        {/* Bottom Left Cell */}
                         <motion.div
                             className="pt-10 pb-6 md:pb-0 md:pr-10 flex flex-col text-left justify-between border-b md:border-b-0 border-white/[0.08] md:border-r"
                             initial={{ opacity: 0, y: 20 }}
@@ -187,7 +180,7 @@ export default function LandingPage() {
                             </Link>
                         </motion.div>
 
-                        {/* Bottom Right Cell: Luxury Residential Preservation */}
+                        {/* Bottom Right Cell */}
                         <motion.div
                             className="pt-10 md:pl-10 flex flex-col text-left justify-between"
                             initial={{ opacity: 0, y: 20 }}
@@ -201,7 +194,6 @@ export default function LandingPage() {
                                 </h4>
                             </Link>
                         </motion.div>
-
                     </div>
 
                 </div>
