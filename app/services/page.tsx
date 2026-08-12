@@ -82,22 +82,25 @@ export default function HygieneArchitectsLightUI() {
   return (
     <div className="relative min-h-screen bg-[#FAFAFA] text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-hidden flex flex-col justify-between">
 
-      {/* TOP NAVIGATION MATCHING INSPIRATION */}
-      <header className="relative z-30 w-full px-6 py-8 flex justify-between items-center text-xs sm:text-sm font-medium tracking-wide">
-        <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
-          @shema
-        </div>
-        <div className="absolute left-1/2 -translate-x-1/2 text-slate-400 hidden sm:flex items-center gap-2">
-          Scroll / Explore <MoveRight className="w-4 h-4" />
-        </div>
-        <div className="font-mono text-slate-500">
-          04 / 04
-        </div>
-      </header>
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto px-4 md:px-16 py-6 md:py-28  text-center mb-12 sm:mb-20 w-full"
+      >
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-neutral-900 leading-[1.12]">
+          Real <span className="font-bold">Spaces</span> Deserve Professional{" "}
+          <span className="font-bold">Care</span>
+        </h2>
+        <p className="mt-4 text-sm sm:text-md text-neutral-600 leading-relaxed text-center">
+          Effortless booking for domestic, deep cleaning, and tenancy services. Direct contact, no hassle.
+        </p>
+      </motion.div>
 
       {/* MAIN INTERACTIVE GRAPH CANVAS */}
       <main className="relative flex-grow w-full max-w-6xl mx-auto h-[800px] sm:h-[700px] md:h-auto md:aspect-video lg:aspect-[16/7]">
+
 
         {/* DESKTOP LAYOUT (Hidden on mobile to preserve layout integrity) */}
         <div className="hidden md:block absolute inset-0 w-full h-full">
