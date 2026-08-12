@@ -11,33 +11,36 @@ import {
     FaBriefcase,
     FaEnvelope,
     FaEllipsis,
+    FaUsersGear,
 } from "react-icons/fa6";
-import { TbMenu } from "react-icons/tb";
+import { TbHomeStar, TbMenu } from "react-icons/tb";
+import { LuNotebookTabs } from "react-icons/lu";
+import { MdConnectWithoutContact } from "react-icons/md";
 
 // Menu Items
 const menuItems = [
     {
         id: "home",
         label: "Home",
-        icon: FaHouse,
+        icon: TbHomeStar,
         href: "/",
     },
     {
         id: "about",
         label: "About",
-        icon: FaUser,
+        icon: LuNotebookTabs,
         href: "/about",
     },
     {
         id: "services",
         label: "Services",
-        icon: FaBriefcase,
+        icon: FaUsersGear,
         href: "/services",
     },
     {
         id: "contact",
         label: "Contact",
-        icon: FaEnvelope,
+        icon: MdConnectWithoutContact,
         href: "/contact",
     },
 ];
@@ -100,7 +103,7 @@ export default function DropDown() {
                     stiffness: 380,
                     mass: 0.8,
                 }}
-                className="absolute top-0 right-0 origin-top-right overflow-hidden border border-border bg-white dark:bg-black shadow-lg"
+                className="absolute top-0 right-0 origin-top-right rounded-full overflow-hidden border border-border bg-white dark:bg-black shadow-lg"
                 onClick={() => !isOpen && setIsOpen(true)}
             >
                 {/* Closed Button */}

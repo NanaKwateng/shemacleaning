@@ -133,13 +133,20 @@ export default function AboutGrid() {
                         }}
                     >
                         <div className="flex -space-x-3 overflow-hidden">
-                            {[1, 2, 3].map((num) => (
-                                <div key={num} className="relative w-12 h-12 rounded-full border-2 border-[#0A0A0A] bg-neutral-800 overflow-hidden grayscale">
+                            {[
+                                "https://images.unsplash.com/photo-1758272421751-963195322eaa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsZWFuaW5nJTIwcGVvcGxlfGVufDB8fDB8fHww",
+                                "https://images.unsplash.com/photo-1758599669317-efd787d954ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNsZWFuaW5nJTIwcGVvcGxlfGVufDB8fDB8fHww",
+                                "https://plus.unsplash.com/premium_photo-1667509213002-f15f1c9eaac8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGNsZWFuaW5nJTIwcGVvcGxlfGVufDB8fDB8fHww",
+                            ].map((src, index) => (
+                                <div
+                                    key={src}
+                                    className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-[#0A0A0A] bg-neutral-800 grayscale"
+                                >
                                     <Image
-                                        src={`https://images.unsplash.com/photo-${num === 1 ? "1534528741775-53994a69daeb" : num === 2 ? "1507003211169-0a1dd7228f2d" : "1494790108377-be9c29b29330"}?auto=format&fit=crop&q=80&w=120`}
-                                        alt="Team Avatar"
+                                        src={src}
+                                        alt={`Team member ${index + 1}`}
                                         fill
-                                        sizes="40px"
+                                        sizes="48px"
                                         className="object-cover"
                                     />
                                 </div>

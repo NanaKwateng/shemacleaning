@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
     ],
     // ✅ Fix 3: Modern formats (WebP/AVIF = 50-80% smaller than JPEG)
     formats: ["image/avif", "image/webp"],
