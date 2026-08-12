@@ -84,7 +84,7 @@ export default function ContactServicesSection() {
                             href="https://wa.me/447346459922"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-white text-white p-6 flex flex-col justify-center items-center text-center shadow-none transition-transform duration-300 group-hover:scale-[1.02] block cursor-pointer overflow-hidden relative"
+                            className="w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-transparent text-white p-6 flex flex-col justify-center items-center text-center shadow-none transition-transform duration-300 group-hover:scale-[1.02] block cursor-pointer overflow-hidden relative"
                         >
                             {/* Morphing Shape Background - Dark Green */}
                             <div className="absolute inset-0 pointer-events-none z-0">
@@ -128,7 +128,7 @@ export default function ContactServicesSection() {
                     >
                         <Link
                             href="mailto:info@shemacleaning.uk"
-                            className="w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-transparent backdrop-blur-md text-[#111111] p-6 flex flex-col justify-center items-center text-center transition-transform duration-300 group-hover:scale-[1.02] block cursor-pointer overflow-hidden relative"
+                            className="w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-transparent text-[#111111] p-6 flex flex-col justify-center items-center text-center transition-transform duration-300 group-hover:scale-[1.02] block cursor-pointer overflow-hidden relative"
                         >
                             {/* Morphing Shape Background - Faint Orange */}
                             <div className="absolute inset-0 pointer-events-none z-0">

@@ -87,7 +87,7 @@ export default function HygieneArchitectsLightUI() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="mx-auto px-4 md:px-16 py-6 md:py-28  text-center mb-12 sm:mb-20 w-full"
+        className="mx-auto px-4 md:px-16 py-12 md:py-28  text-center mb-12 sm:mb-20 w-full"
       >
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-neutral-900 leading-[1.12]">
           Real <span className="font-bold">Spaces</span> Deserve Professional{" "}
