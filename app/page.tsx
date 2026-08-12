@@ -1,6 +1,4 @@
 // app/page.tsx
-// ⚠️  CHANGES: Semantic HTML + aria-label attributes only.
-//    No layout, animation, content, or component changes.
 
 import { Metadata } from "next";
 import LandingPage from "@/components/layout/LandingPage";
@@ -13,6 +11,7 @@ import FAQ from "@/components/bits/FAQ";
 import CTA from "@/components/layout/CTA";
 import Footer from "@/components/layout/Footer";
 import AboutGrid from "@/components/layout/AboutGrid";
+import ContactServicesSection from "@/components/layout/ContactService";
 
 export const metadata: Metadata = {
   title: "Professional Cleaning Services| Shema Cleaning & Concierge Services",
@@ -62,6 +61,9 @@ export default function HomePage() {
       {/* SECTION 1: HERO */}
       <section aria-label="Hero — Clean Spaces, Happy Environments">
         <LandingPage />
+      </section>
+      <section aria-label="Contact Services Overview">
+        <ContactServicesSection />
       </section>
 
       {/* SECTION 2: ABOUT */}
