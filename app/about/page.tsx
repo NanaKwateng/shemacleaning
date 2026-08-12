@@ -243,7 +243,7 @@ export default function LuxuryHeroCuration() {
                 <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[9px] font-mono text-neutral-600 tracking-widest uppercase border-t border-white/[0.04]">
                     <div>©2026 SHEMA CLEANING SERVICES. ALL RIGOROUSLY RESERVED.</div>
                     <div className="flex items-center gap-6">
-                        <span>SORA ENGINE ACTIVE</span>
+
                         <span className="text-neutral-400">TEL: 07346459922</span>
                     </div>
                 </div>

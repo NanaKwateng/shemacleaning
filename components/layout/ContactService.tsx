@@ -41,9 +41,7 @@ export default function ContactServicesSection() {
                 {/* Top Meta Bar */}
                 <div className="flex items-center justify-between text-[11px] sm:text-xs tracking-wider uppercase text-neutral-500 mb-10 sm:mb-16">
                     <div className="flex items-center gap-2 font-medium">
-                        <span className="text-orange-500 text-[10px]">◀</span>
                         <span>Get In Touch — Shema Cleaning</span>
-                        <span className="text-orange-500 text-[10px]">▶</span>
                     </div>
                     <div className="flex items-center gap-3 font-mono">
                         <span>01</span>

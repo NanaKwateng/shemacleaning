@@ -12,6 +12,7 @@ import {
     FaEnvelope,
     FaEllipsis,
 } from "react-icons/fa6";
+import { TbMenu } from "react-icons/tb";
 
 // Menu Items
 const menuItems = [
@@ -99,7 +100,7 @@ export default function DropDown() {
                     stiffness: 380,
                     mass: 0.8,
                 }}
-                className="absolute top-0 right-0 origin-top-right overflow-hidden border border-border bg-popover shadow-lg"
+                className="absolute top-0 right-0 origin-top-right overflow-hidden border border-border bg-white dark:bg-black shadow-lg"
                 onClick={() => !isOpen && setIsOpen(true)}
             >
                 {/* Closed Button */}
@@ -115,7 +116,7 @@ export default function DropDown() {
                         pointerEvents: isOpen ? "none" : "auto",
                     }}
                 >
-                    <FaEllipsis className="h-5 w-5 text-muted-foreground" />
+                    <TbMenu className="h-5 w-5 text-muted-foreground" />
                 </motion.div>
 
                 {/* Menu Content */}
@@ -178,8 +179,8 @@ export default function DropDown() {
                                                 setHoveredItem(null)
                                             }
                                             className={`relative flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors duration-200 ease-out ${isActive
-                                                    ? "text-foreground"
-                                                    : "text-muted-foreground hover:text-foreground"
+                                                ? "text-foreground"
+                                                : "text-muted-foreground hover:text-foreground"
                                                 }`}
                                         >
                                             {/* Active Background */}
